@@ -6,7 +6,7 @@ import pyttsx3
 
 # Page configuration
 st.set_page_config(
-    page_title="FeelFlare",
+    page_title="Sentiment analysis",
     layout="centered",
     initial_sidebar_state="collapsed"
 )
@@ -32,11 +32,11 @@ def autocorrect_text(text):
     return corrected_text
 
 # Streamlit User Interface
-st.title("FeelFlare - Sentiment Analysis App")
-st.write("FeelFlare is a Sentiment Analysis model that determines whether a given text has a positive, negative, or neutral sentiment using natural language processing techniques.")
+st.title("Sentiment Analysis App")
+st.write("This is a Sentiment Analysis model that determines whether a given text has a positive, negative, or neutral sentiment using natural language processing techniques.")
 
 # User Input
-user_text = st.text_input("Share how you feel: ")
+user_text = st.text_input("Provide your text here: ")
 
 # Autocorrect option
 autocorrect_option = st.checkbox("Enable Autocorrect")
